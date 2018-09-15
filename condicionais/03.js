@@ -3,7 +3,7 @@
 // o mesmo output. Qual das próximas
 // condicionais são equivalentes? Porque?
 
-// Resposta: A == C, o B é diferente.
+// Resposta: A == C, o B é diferente. (Acertei)
 
 // Porque...
 

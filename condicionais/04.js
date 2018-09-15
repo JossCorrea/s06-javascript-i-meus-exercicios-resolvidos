@@ -25,6 +25,8 @@
 // 	default:
 // 		throw "Dia inválido!"
 // }
+
+// Minha resposta = correção:
 if (day === 0) {
 	console.log("Segunda")
 } else if (day === 1) {
@@ -51,6 +53,8 @@ if (day === 0) {
 // } else {
 // 	rand = false
 // }
+
+// Minha resposta = correção:
 let rand = Math.random() > 0.5 ? true : false
 
 // Reescreva a próxima expressão usando
@@ -63,6 +67,8 @@ let rand = Math.random() > 0.5 ? true : false
 // } else if (b > r && b > g) {
 // 	color = "Azul"
 // }
+
+// Minha resposta = correção (única diferença que coloquei "Outra cor"):
 const r = Math.random() * 256
 const g = Math.random() * 256
 const b = Math.random() * 256
