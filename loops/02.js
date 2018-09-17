@@ -5,6 +5,8 @@
 //   [0, 0, 0, 0, 0],
 //   [0, 0, 0, 0, 0],
 //   [0, 0, 0, 0, 0] ]
+
+//Minha resposta = correção: (só troquei o i pelo j)
 let matriz = []
 for (let j = 0; j < 5; j++) {
     let linha = []
@@ -40,6 +42,8 @@ for (let i = 0; i < 5; i++) {
 //   [2, 1, 0, 1, 2],
 //   [3, 2, 1, 0, 1],
 //   [4, 3, 2, 1, 0] ]
+
+//Minha resposta = correção: (só troquei o i pelo j)
 let matriz = []
 for (let j = 0; j < 5; j++) { // A
     let linha = []
@@ -75,6 +79,18 @@ for (let j = 0; j < 5; j++) { // A
 // ***
 // **
 // *
+
+//Minha resposta:
+const num=7
+for (let i=num;i>0;i--){
+    let linha="*"
+    for (j=1;j<i;j++){
+        linha = linha +"*"
+    }
+    console.log(linha)
+}
+
+//Correção:
 for (let j = 0; j < 7; j++) { 
     let asteriscos = ""
     for (let i = 0; i < (7 - j); i++) { 
@@ -119,6 +135,22 @@ for (let i = 0; i < 7; i++) {
 // 12345**
 // 123456*
 // 1234567
+
+//Minha resposta:
+const num=7
+for (let i=1;i<=num;i++){
+    let linha=""
+    for (j=1;j<=num;j++){
+        if (j<=i){
+            linha += String(j)
+        } else{
+            linha += "*"
+        }
+    }
+    console.log(linha)
+}
+
+//Correção:
 for (let j = 1; j <= 7; j++) {
     let linha = ""
     for (let k = 1; k <= j; k++) {

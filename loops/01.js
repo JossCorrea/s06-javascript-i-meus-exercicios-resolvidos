@@ -1,6 +1,8 @@
 // Escreva um loop em Javascript
 // que vai calcular a soma de todos
 // os números entre 0 e 300.
+
+//Minha resposta = correção:
 let soma = 0
 for (let i = 0; i <= 300; i++) {
 	soma += i // soma = soma + i
@@ -17,6 +19,8 @@ for (let i = 0; i <= 300; i++) {
 // Escreva um loop em Javascript
 // que vai calcular a seguinte soma:
 // 1 * 1 + 2 * 2 + 3 * 3 + ... + 400 * 400
+
+//Minha resposta = correção:
 let soma = 0
 for (let i = 1; i <= 400; i++) {
 	// soma += i * i
@@ -31,9 +35,10 @@ for (let i = 1; i <= 400; i++) {
 // 4 iteracao -> soma = 14; i = 4 // PARA
 // FINAL -> soma = 14
 
+//outra forma (correção):
 let soma = 0
 let x, y
-for (x = 1, y = 1; x <= 400, y <= 400; x++, y++) {
+for (x = 1, y = 1; x <= 400, y <= 400; x++, y++) { //Rodando o for com duas variáveis de iteração
 	let z = x * y
 	soma += z
 }
@@ -41,6 +46,14 @@ for (x = 1, y = 1; x <= 400, y <= 400; x++, y++) {
 // Escreva um loop em Javascript
 // que vai calcular a seguinte soma:
 // 1 * 2 + 2 * 3 + 3 * 4 + ... + 249 * 250
+
+//Minha resposta:
+let soma=0
+for ( let i=1 ; i<=249 ; i++){
+    soma = soma + (i*(i+1))
+}
+
+//Correção: 
 let soma = 0
 for (let i = 2; i <= 250; i++) {
 	soma += i * (i - 1)
@@ -54,6 +67,7 @@ for (let i = 2; i <= 250; i++) {
 // 5 iteracao -> soma = 40; i = 6 // PARA
 // FINAL -> soma = 40
 
+// Outras formas:
 for (let i = 1; i < 250; i++) {
 	soma += i * (i + 1)
 }
@@ -73,11 +87,14 @@ for (x = 1, y = 2; x <= 249, y <= 250; x++, y++) {
 // Escreva um loop em Javascript que
 // vai calcular 10! (10 fatorial), o
 // que significa 10 * 9 * 8 * 7 ... * 1.
+
+// Minha resposta = correção:
 let fatorial = 10
 for (let i = fatorial - 1; i > 0; i--) {
 	fatorial *= i // fatorial = fatorial * i
 }
 
+// outra forma:
 let fatorial = 10
 let aux = 1
 for (let i = 1; i <= fatorial; i++) {
@@ -88,11 +105,13 @@ for (let i = 1; i <= fatorial; i++) {
 // calcula quantos termos a soma
 // 1 + 2 + 3 + ... precisa para
 // que o resultado dela exceda um milhão.
+
+// Minha resposta = correção:
 let soma = 0
 let i = 0
 while (soma <= 1000000) {
 	i++ // i = i + 1
-	soma += i
+	soma += i //soma = soma + i
 }
 
 // Escreva um loop em Javascript que
@@ -105,6 +124,21 @@ while (soma <= 1000000) {
 // multiplicar por 3 e adicionar 1 (*3+1).
 // Desta forma, por exemplo, se a sequência 
 // iniciar com o número 5 ter-se-á: 5; 16; 8; 4; 2; 1".
+
+//Minha resposta:
+let num = 5
+let arr=[num]
+while(num>1){
+    if (num%2==0){
+        num=num/2
+    }else{
+        num=(3*num)+1
+    }
+    arr.push(num)
+}
+console.log("Lista de números = ",arr)
+
+//Correção:
 let collatz = 5
 while (collatz > 1) {
 	if (collatz % 2 === 0) {
@@ -124,6 +158,15 @@ while (collatz > 1) {
 // Escreva um loop em Javascript
 // que gera uma lista com 100
 // número randomicos.
+
+//Minha resposta: (deixei os números dandomicos variando de 0 a 1)
+let arr=[]
+for ( let i=1 ; i<=100 ; i++){
+    arr.push(Math.random())
+}
+console.log("Lista =",arr)
+
+//Correção: (Foi aplicada uma correção para gerar números inteiros de zero a 100)
 let arr = []
 for (let i = 0; i < 100; i++) {
 	arr.push(Math.floor(Math.random() * 100))
@@ -143,10 +186,12 @@ do {
 // 0 = coroa. Rode esse loop 1000 vezes e
 // printe o numero de caras e o numero
 // de coroas no console.
+
+//Minha resposta = correção:
 let cara = 0
 let coroa = 0
 for (let i = 0; i < 1000; i++) {
-	let moeda = Math.floor(Math.random() * 2)
+	let moeda = Math.floor(Math.random() * 2) //Gera um número inteiro que é 0(coroa) ou 1(cara)
 	if (moeda === 1) {
 		cara++
 	} else {
